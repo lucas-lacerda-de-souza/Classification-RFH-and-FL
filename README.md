@@ -56,29 +56,45 @@ Classification-RFH-and-FL/
 
 │
 
-├── models/
+├── 📄 LICENSE
 
-│   ├── Multimodal AlexNet - Model Level/
+├── 📄 README.md
 
-│   ├── Multimodal AlexNet - Patient-Level/
-
-│   ├── Multimodal ResNet18 – Model Level/
-
-│   ├── Multimodal ResNet18 - Patient-Level/
-
-│   ├── Multimodal VGG16 – Model Level/
-
-│   ├── Multimodal VGG16 - Patient-Level/
-
-│   ├── XGBoost Classification/
+├── 📄 REQUIREMENTS.txt
 
 │
 
-├── REQUIREMENTS.txt
+├── 📁 data/
 
-├── README.md
+│   ├── 📄 Supplementary Table 1.xlsx   # Morphometric analysis (traditional statistics)
 
-└── LICENSE
+│   ├── 📄 Supplementary Table 2.xlsx   # Clinicopathologic + morphometric analysis (XGBoost)
+
+│   ├── 📄 Supplementary Table 3.xlsx   # Multimodal (clinical + morphometric factors)
+
+│   ├── 📄 Supplementary Table 4.xlsx   # Grad-CAM data (external validation)
+
+│   └── 📄 README.md                    # Description of supplementary tables and data structure
+
+│
+
+├── 📁 models/
+
+│   ├── 📄 Multimodal AlexNet - Model Level.py
+
+│   ├── 📄 Multimodal AlexNet - Patient-Level.py
+
+│   ├── 📄 Multimodal ResNet18 - Model Level.py
+
+│   ├── 📄 Multimodal ResNet18 - Patient-Level.py
+
+│   ├── 📄 Multimodal VGG16 - Model Level.py
+
+│   ├── 📄 Multimodal VGG16 - Patient-Level.py
+
+│   ├── 📄 XGBoost Classification.py
+
+│   └── 📄 README.md                    # Description of each model and usage instructions
 
 ________________________________________
 **7. Installation**
