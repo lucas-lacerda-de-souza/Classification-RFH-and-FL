@@ -1,6 +1,9 @@
-Multimodal AI Pipeline for Lymphoid Lesions: RFH vs FL
+Deep Learning-Based Histopathologic Classification of Head and Neck Reactive Follicular Hyperplasia and Follicular Lymphoma 
+
 Author: Lucas Lacerda de Souza
+
 Date: 2025
+
 Language: Python 3.10+ (PyTorch 2.1)
 ________________________________________
 1. Project Overview
@@ -79,9 +82,10 @@ Classification-RFH-and-FL/
 ________________________________________
 7. Installation
 
-git clone https://github.com/<your-username>/pathology-multimodal-pipeline.git
+[git clone https://github.com/<your-username>/pathology-multimodal-pipeline.git
 cd pathology-multimodal-pipeline
-pip install -r requirements.txt
+pip install -r requirements.txt](https://github.com/lucas-lacerda-de-souza/Classification-RFH-and-FL.git)
+
 ________________________________________
 8. Citation
 
