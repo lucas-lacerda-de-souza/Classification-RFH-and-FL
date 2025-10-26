@@ -99,9 +99,9 @@ Classification-RFH-and-FL/
 ________________________________________
 **7. Installation**
 
-[git clone https://github.com/<your-username>/pathology-multimodal-pipeline.git
+[[git clone https://github.com/<your-username>/pathology-multimodal-pipeline.git
 cd pathology-multimodal-pipeline
-pip install -r requirements.txt](https://github.com/lucas-lacerda-de-souza/Classification-RFH-and-FL.git)
+pip install -r requirements.txt](https://github.com/lucas-lacerda-de-souza/Classification-RFH-and-FL.git)](https://github.com/lucas-lacerda-de-souza/Classification-RFH-and-FL.git)
 
 ________________________________________
 **8. Citation**
