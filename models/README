@@ -1,0 +1,13 @@
+Deep Learning Architectures and Classifiers
+
+Contains all scripts related to model training, evaluation, and multimodal integration.
+Each file corresponds to a specific architecture or analysis level.
+
+File and Purpose	
+Multimodal AlexNet - Model Level.py	- Trains and evaluates the AlexNet-based multimodal model at the patch level. Integrates image and clinical features.
+Multimodal AlexNet - Patient-Level.py - Aggregates patch-level outputs from AlexNet to perform classification per patient.
+Multimodal VGG16 - Model Level.py - VGG16-based multimodal model focusing on patch-level integration with clinical data.
+Multimodal VGG16 - Patient-Level.py - Patient-level VGG16 classifier aggregating multiple patches per case.
+Multimodal ResNet18 - Model Level.py - Implements ResNet18-based multimodal fusion for feature extraction and classification.
+Multimodal ResNet18 - Patient-Level.py - Patient-level ResNet18 model that averages patch predictions for case-level inference.
+XGBoost Classification.py - Gradient-boosted model used for feature-based classification combining morphometric and clinicopathologic data.
