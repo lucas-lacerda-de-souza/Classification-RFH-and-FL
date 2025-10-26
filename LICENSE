@@ -1,0 +1,33 @@
+MIT License
+
+Copyright (c) 2025 Lucas Lacerda de Souza
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software, associated source code, trained models, documentation files,
+and any other research material included in this repository (collectively referred
+to as the "Software"), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish, distribute,
+sublicense, and/or sell copies of the Software, and to permit persons to whom
+the Software is furnished to do so, subject to the following conditions:
+
+1. The above copyright notice and this permission notice shall be included in
+   all copies or substantial portions of the Software.
+
+2. Proper attribution shall be given in any scientific, academic, or industrial
+   use of this Software, citing the following work:
+
+       Lucas Lacerda de Souza.
+       "Multimodal AI Pipeline for Lymphoid Lesions: RFH vs FL."
+       2025.
+
+3. The Software and its components (including models for segmentation,
+   classification, data augmentation, Grad-CAM, and XGBoost-based explainability)
+   are intended for research and educational purposes. Clinical or diagnostic
+   deployment should only occur under appropriate validation and ethical approval.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
+INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR
+PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+TORT, OR OTHERWISE, ARISING FROM, OUT OF, OR IN CONNECTION WITH THE SOFTWARE OR THE
+USE OR OTHER DEALINGS IN THE SOFTWARE.
