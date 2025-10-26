@@ -13,10 +13,15 @@ ________________________________________
 ________________________________________
 3. Model Architectures
 •	XGBoost
+
 •	U-Net++
+
 •	AlexNet + Multilayer perceptron
+
 •	VGG16 + Multilayer perceptron
+
 •	ResNet18 + Multilayer perceptron
+
 •	GradCam
 ________________________________________
 4. Features Used
