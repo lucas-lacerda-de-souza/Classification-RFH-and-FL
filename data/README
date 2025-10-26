@@ -1,6 +1,6 @@
 The directory should contain all input datasets used for training, validation, and testing.
-Recommended subfolders:
 
+Organisation of the patches
 data/
 ├── train/
 │   ├── 0/     # Class 0 (Reactive Follicular Hyperplasia)
@@ -17,12 +17,10 @@ data/
     └── clinical_data_test.xlsx
 
 
-Each .xlsx file must include:
+Supplementary Table 1: Morphometric analysis table of the training dataset used in traditional statistical analysis using XGBoost model.
 
-CaseID — unique patient identifier
+Supplementary Table 2: Clinicopathologic and morphometric analysis table of the training dataset used in the XGBoost model.
 
-Classe — class label (0 = RFH, 1 = FL)
+Supplementary Table 3: Multimodal data analysis table combining clinical and morphometric factors.
 
-Clinical variables (e.g., Age, Sex, Location, etc.)
-
-Morphometric nuclear features (e.g., Area, Eccentricity, MeanIntensity, etc.)
+Supplementary Table 4: Data analysis table from Grad-CAM results – external validation set.
