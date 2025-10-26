@@ -1,0 +1,28 @@
+This directory should contain all input datasets used for training, validation, and testing.
+Recommended subfolders:
+
+data/
+├── train/
+│   ├── 0/     # Class 0 (Reactive Follicular Hyperplasia)
+│   └── 1/     # Class 1 (Follicular Lymphoma)
+├── val/
+│   ├── 0/
+│   └── 1/
+├── test/
+│   ├── 0/
+│   └── 1/
+└── clinical_data/
+    ├── clinical_data_train.xlsx
+    ├── clinical_data_val.xlsx
+    └── clinical_data_test.xlsx
+
+
+Each .xlsx file must include:
+
+CaseID — unique patient identifier
+
+Classe — class label (0 = RFH, 1 = FL)
+
+Clinical variables (e.g., Age, Sex, Location, etc.)
+
+Morphometric nuclear features (e.g., Area, Eccentricity, MeanIntensity, etc.)
