@@ -94,7 +94,7 @@ Classification-RFH-and-FL/
 
 │   ├── 📄 XGBoost Classification.py
 
-│   └── 📄 README.md                    # Description of each model and usage instructions
+│   └── 📄 README.md                  
 
 ________________________________________
 **7. Installation**
