@@ -7,6 +7,7 @@ Date: 2025
 Language: Python 3.10+ (PyTorch 2.1)
 ________________________________________
 **1. Project Overview**
+
 This project implements a multimodal artificial intelligence pipeline for classifying Reactive Follicular Hyperplasia (RFH) and Follicular Lymphoma (FL).
 It integrates histopathological images, clinicopathologic data, and morphometric nuclear features using XGBoost (SHAP), convolutional neural networks (CNNs) + multilayer perceptron, and explainable AI methods (Grad-CAM).
 ________________________________________
