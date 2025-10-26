@@ -1,4 +1,4 @@
-Deep Learning-Based Histopathologic Classification of Head and Neck Reactive Follicular Hyperplasia and Follicular Lymphoma 
+**Deep Learning-Based Histopathologic Classification of Head and Neck Reactive Follicular Hyperplasia and Follicular Lymphoma** 
 
 Author: Lucas Lacerda de Souza
 
@@ -6,15 +6,15 @@ Date: 2025
 
 Language: Python 3.10+ (PyTorch 2.1)
 ________________________________________
-1. Project Overview
+**1. Project Overview**
 This project implements a multimodal artificial intelligence pipeline for classifying Reactive Follicular Hyperplasia (RFH) and Follicular Lymphoma (FL).
 It integrates histopathological images, clinicopathologic data, and morphometric nuclear features using XGBoost (SHAP), convolutional neural networks (CNNs) + multilayer perceptron, and explainable AI methods (Grad-CAM).
 ________________________________________
-2. Pipeline
+**2. Pipeline**
  <img width="1317" height="1026" alt="Captura de tela 2025-10-26 135618" src="https://github.com/user-attachments/assets/4d637290-0570-41d6-b5bb-0ec6b5c1a36f" />
 
 ________________________________________
-3. Model Architectures
+**3. Model Architectures**
 
 •	XGBoost
 
@@ -28,13 +28,13 @@ ________________________________________
 
 •	GradCam
 ________________________________________
-4. Features Used
+**4. Features Used**
    
 •	Morphometric features (nucleus-based)
 
 •	Clinicopathologic features (age, sex, location)
 ________________________________________
-5. Evaluation Metrics
+**5. Evaluation Metrics**
    
 •	XGBoost + SHAP – Classification (accuracy, area under the curve (AUC), F1-score, precision, recall and SHAP).
 
@@ -49,7 +49,7 @@ ________________________________________
 •	GradCam (morphometric)
 
 ________________________________________
-6. Repository Structure
+**6. Repository Structure**
    
 Classification-RFH-and-FL/
 
@@ -73,21 +73,21 @@ Classification-RFH-and-FL/
 
 │
 
-├── requirements.txt
+├── REQUIREMENTS.txt
 
 ├── README.md
 
 └── LICENSE
 
 ________________________________________
-7. Installation
+**7. Installation**
 
 [git clone https://github.com/<your-username>/pathology-multimodal-pipeline.git
 cd pathology-multimodal-pipeline
 pip install -r requirements.txt](https://github.com/lucas-lacerda-de-souza/Classification-RFH-and-FL.git)
 
 ________________________________________
-8. Citation
+**8. Citation**
 
 @article{delasouza2025,
   title={Deep Learning-Based Histopathologic Classification of Head and Neck Reactive Follicular Hyperplasia and Follicular Lymphoma},
@@ -97,7 +97,7 @@ ________________________________________
   publisher={Nature Publishing Group UK London}
 }
 ________________________________________
-9. License
+**9. License**
 
 MIT License © 2025 Lucas Lacerda de Souza
 
