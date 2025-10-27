@@ -97,6 +97,32 @@ Classification-RFH-and-FL/
 │   └── 📄 README.md                  
 
 ________________________________________
+
+**7. Run models and reproduce tables**
+
+| Output (Paper files)                                                                    | Script/Notebook                               | Command                                                                 |
+| --------------------------------------------------------------------------------------- | --------------------------------------------- | ----------------------------------------------------------------------- |
+| **Figure 1** – Workflow for morphometric analysis evidenced that whole-slide            | GraphPad Prism                                | GraphPad Prism                                                          |
+| histological images were divided into tiles and segmented at the patch level            |                                               |                                                                         |
+| **Figure 2** – Traditional machine learning for clinicopathological and morphometric    | `models/XGBoost Classification.py`            | `python "models/XGBoost Classification.py"`                             |
+| data. Morphometric analysis (training)                                                  |                                               |                                                                         |
+| **Supplementary Table 2** – Clinicopathologic + morphometric analysis                   | `models/XGBoost Classification.py`            | `python "models/XGBoost Classification.py" --include_clinicopathologic` |
+| **Supplementary Table 3** – Multimodal fusion (clinical + morphometric + deep features) | `models/Multimodal ResNet18 - Model Level.py` | `python "models/Multimodal ResNet18 - Model Level.py"`                  |
+| **Supplementary Table 4** – Grad-CAM validation                                         | `notebooks/gradcam_visualization.ipynb`       | Run all cells                                                           |
+| **Supplementary Table 1** – Morphometric analysis (training)                            | `models/XGBoost Classification.py`            | `python "models/XGBoost Classification.py"`                             |
+| **Supplementary Table 2** – Clinicopathologic + morphometric analysis                   | `models/XGBoost Classification.py`            | `python "models/XGBoost Classification.py" --include_clinicopathologic` |
+| **Supplementary Table 3** – Multimodal fusion (clinical + morphometric + deep features) | `models/Multimodal ResNet18 - Model Level.py` | `python "models/Multimodal ResNet18 - Model Level.py"`                  |
+| **Supplementary Table 4** – Grad-CAM validation                                         | `notebooks/gradcam_visualization.ipynb`       | Run all cells                                                           |
+| **Supplementary Table 2** – Clinicopathologic + morphometric analysis                   | `models/XGBoost Classification.py`            | `python "models/XGBoost Classification.py" --include_clinicopathologic` |
+| **Supplementary Table 3** – Multimodal fusion (clinical + morphometric + deep features) | `models/Multimodal ResNet18 - Model Level.py` | `python "models/Multimodal ResNet18 - Model Level.py"`                  |
+| **Supplementary Table 4** – Grad-CAM validation                                         | `notebooks/gradcam_visualization.ipynb`       | Run all cells                                                           |
+| **Supplementary Table 1** – Morphometric analysis (training)                            | `models/XGBoost Classification.py`            | `python "models/XGBoost Classification.py"`                             |
+| **Supplementary Table 2** – Clinicopathologic + morphometric analysis                   | `models/XGBoost Classification.py`            | `python "models/XGBoost Classification.py" --include_clinicopathologic` |
+| **Supplementary Table 3** – Multimodal fusion (clinical + morphometric + deep features) | `models/Multimodal ResNet18 - Model Level.py` | `python "models/Multimodal ResNet18 - Model Level.py"`                  |
+| **Supplementary Table 4** – Grad-CAM validation                                         | `notebooks/gradcam_visualization.ipynb`       | Run all cells                                                           |
+
+
+
 **7. Installation**
 
 git clone https://github.com/lucas-lacerda-de-souza/Classification-RFH-and-FL.git
