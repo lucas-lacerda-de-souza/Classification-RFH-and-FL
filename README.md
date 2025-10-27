@@ -100,12 +100,17 @@ ________________________________________
 
 **7. Run models and reproduce tables**
 
-| Output (Paper files)                                                                    | Script/Notebook                               | Command                                                                 |
-| --------------------------------------------------------------------------------------- | --------------------------------------------- | ----------------------------------------------------------------------- |
-| **Figure 1** – Workflow for morphometric analysis evidenced that whole-slide            | GraphPad Prism                                | GraphPad Prism                                                          |
-| histological images were divided into tiles and segmented at the patch level            |                                               |                                                                         |
-| **Figure 2** – Traditional machine learning for clinicopathological and morphometric    | `models/XGBoost Classification.py`            | `python "models/XGBoost Classification.py"`                             |
-| data. Morphometric analysis (training)                                                  |                                               |                                                                         |
+| Output (Paper files)                                                                    | Script/Notebook                                                      | Command                                                                      |
+| --------------------------------------------------------------------------------------- | -------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
+| **Figure 1** – Workflow for morphometric analysis evidenced that whole-slide            | GraphPad Prism                                                       | GraphPad Prism                                                               |
+| histological images were divided into tiles and segmented at the patch level            |                                                                      |                                                                              |
+| **Figure 2** – Traditional machine learning for clinicopathological and morphometric    | `models/XGBoost Classification to XGBoost_classification_CPC_MPA.py` | `python "models/XGBoost Classification to XGBoost_classification_CPC_MPA.py"`|                            
+| data.                                                                                   |                                                                      |                                                                              |
+
+
+
+
+
 | **Supplementary Table 2** – Clinicopathologic + morphometric analysis                   | `models/XGBoost Classification.py`            | `python "models/XGBoost Classification.py" --include_clinicopathologic` |
 | **Supplementary Table 3** – Multimodal fusion (clinical + morphometric + deep features) | `models/Multimodal ResNet18 - Model Level.py` | `python "models/Multimodal ResNet18 - Model Level.py"`                  |
 | **Supplementary Table 4** – Grad-CAM validation                                         | `notebooks/gradcam_visualization.ipynb`       | Run all cells                                                           |
