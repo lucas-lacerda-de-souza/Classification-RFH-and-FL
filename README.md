@@ -109,7 +109,7 @@ ________________________________________
 @article{delasouza2025,
   title={Deep Learning-Based Histopathologic Classification of Head and Neck Reactive Follicular Hyperplasia and Follicular Lymphoma},
   author={de Souza, Lucas Lacerda, Chen, Zhiyang […] Khurram, Syed Ali and Vargas, Pablo Agustin},
-  journal={npj Precision Oncology},
+  journal={npj digital medicine},
   year={2025},
   publisher={Nature Publishing Group UK London}
 }
