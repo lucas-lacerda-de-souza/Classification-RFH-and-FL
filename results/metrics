@@ -1,1 +1,108 @@
+3. Model Performance Summary
+🧩 Morphometric Analysis
 
+Follicular Lymphoma (FL) nuclei exhibited:
+Larger nuclear area (p < 0.0051).
+Greater perimeter (p < 0.0105).
+Higher eccentricity (p < 0.0001), indicating irregular nuclear shapes.
+Reactive Follicular Hyperplasia (RFH) nuclei showed higher circularity (p < 0.0026), consistent with regular nuclear contours.
+Mean optical density (OD) differences were not significant (p > 0.1614).
+These findings highlight clear morphological separation between benign and malignant follicular lesions.
+
+🧮 Traditional Machine Learning (XGBoost)
+
+The XGBoost classifier combining clinicopathological and morphometric data achieved:
+Accuracy: 0.788
+AUC: 0.904
+F1-score: 0.741
+Precision: 0.909
+Recall: 0.625
+
+Most influential features (based on SHAP):
+Age was the strongest predictor (2.515).
+Lesion location contributed moderately (0.246).
+Among morphometric features, eccentricity (0.478), area (0.387), and circularity (0.373) had the greatest impact.
+Features with p < 0.2 were selected for inclusion in the multimodal analysis.
+The ROC AUC of 0.904 confirmed strong discriminative performance.
+
+🧠 Multimodal Patch-Level Models
+
+AlexNet
+Internal performance: accuracy 0.865, F1-score 0.872.
+Maintained stable accuracy in external validation 1 (0.875), with slightly reduced recall (0.810).
+External validation 2 showed a modest drop (accuracy 0.830, F1-score 0.832), likely due to cohort variability.
+
+AlexNet + Segmentation
+Internal accuracy 0.875 with consistent generalization across external datasets.
+External validation 1: accuracy 0.850, recall 0.800.
+External validation 2: accuracy 0.876, recall 0.867.
+ROC AUC across all datasets ranged from 0.692 to 0.945, indicating strong calibration and robustness.
+
+ResNet18
+Achieved the highest internal performance:
+Accuracy 0.920, F1-score 0.919, AUC 0.954, loss 0.003.
+External validation 1 maintained accuracy (0.920) and recall (0.960).
+External validation 2 showed decreased performance (accuracy 0.805, F1-score 0.789), suggesting sensitivity to domain shift.
+
+ResNet18 + Segmentation
+Internal accuracy 0.860, F1-score 0.843.
+External validation 1 achieved high accuracy (0.905) and recall (0.930).
+External validation 2 retained accuracy 0.805 with stable calibration (loss 0.002).
+
+VGG16
+Internal accuracy 0.890, recall 0.960, F1-score 0.897, AUC 0.922.
+External validation 1: accuracy 0.865, F1-score 0.869.
+External validation 2: accuracy 0.855, F1-score 0.851.
+Maintained balanced precision and recall across all datasets.
+
+VGG16 + Segmentation
+Internal accuracy 0.880, lowest classification loss (0.001).
+External validation 1: accuracy 0.775, F1-score 0.715.
+External validation 2: accuracy 0.690, F1-score 0.714.
+Showed reduced generalizability but excellent calibration performance.
+
+👩‍⚕️ Multimodal Patient-Level Models
+AlexNet
+Internal accuracy 0.964, sensitivity 0.968, specificity 0.959.
+External validation 1: accuracy 0.940, sensitivity 0.925.
+External validation 2: accuracy 0.871, specificity 0.842.
+ROC AUC values remained consistently high (0.977–0.954).
+
+AlexNet + Segmentation
+Internal accuracy 0.866; external accuracy 0.857 (EV1) and 0.878 (EV2).
+Sensitivity remained high (0.932–0.937).
+Lower Expected Calibration Error (ECE 0.174–0.193) than the base model, indicating better calibration.
+
+ResNet18
+Internal accuracy 0.891, specificity 0.914, sensitivity 0.869.
+External validation 1: accuracy dropped to 0.716, sensitivity 0.655.
+External validation 2: accuracy 0.908, excellent calibration (ECE 0.011).
+AUC values ranged from 0.954 to 0.941.
+
+ResNet18 + Segmentation
+Internal accuracy 0.914, balanced sensitivity (0.913) and specificity (0.914).
+External accuracy ranged 0.675–0.900, with consistent calibration (ECE 0.125–0.145).
+AUC remained robust across datasets (0.930–0.862).
+
+VGG16
+Internal accuracy 0.833, sensitivity 0.774, specificity 0.892.
+External validation showed moderate decline: accuracy 0.694–0.822.
+Maintained strong calibration with low ECE (0.035–0.077) and AUC between 0.754–0.853.
+
+VGG16 + Segmentation
+Internal accuracy 0.849, sensitivity 0.823, specificity 0.875.
+External performance decreased (accuracy 0.679–0.740).
+AUC ranged from 0.814 to 0.723 with consistent calibration (ECE 0.119–0.138).
+
+🔥 Grad-CAM Explainability
+Internal accuracy and F1-score: 0.926.
+Validation accuracy and F1: 0.776 / 0.742.
+External validation accuracy and F1: 0.817 / 0.819.
+AUC progression: 0.934 → 0.737 → 0.847 (train → validation → external).
+Grad-CAM visualizations revealed biologically coherent activation regions, focusing on nuclear architecture and follicular organization.
+
+👨‍⚕️ Pathologists’ Evaluation
+Pathologist 1: accuracy 82.4%, sensitivity 85.2%, specificity 79.6%, F1-score 0.829, κ = 0.648.
+Pathologist 2: accuracy 86.1%, sensitivity 81.5%, specificity 90.7%, F1-score 0.854, κ = 0.722.
+Interobserver agreement: κ = 0.668 (95% CI: 0.527–0.810), overall agreement 83.3%.
+These results indicate substantial agreement both between experts and with the model’s predictions.
