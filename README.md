@@ -60,13 +60,21 @@ LICENSE — Project license
 
 models/
  ├── multimodal_alexnet_patch_level.py
+ 
  ├── multimodal_alexnet_patient_level.py
+ 
  ├── multimodal_resnet18_patch_level.py
+ 
  ├── multimodal_resnet18_patient_level.py
+ 
  ├── multimodal_vgg16_patch_level.py
+ 
  ├── multimodal_vgg16_patient_level.py
+ 
  ├── segmentation_unet++.py
+ 
  ├── xgboost_classification_cpc_mpa.py
+ 
  └── xgboost_classification_gradcam.py
 
 data/
