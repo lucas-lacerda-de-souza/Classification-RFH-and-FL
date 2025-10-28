@@ -14,7 +14,7 @@ multimodal_alexnet_patient_level.py	   │    Patient    │         Aggregated 
 multimodal_resnet18_patch_level.py	   │     Patch     │   ResNet18-based model integrating local image patches and tabular data.
 multimodal_resnet18_patient_level.py   │    Patient    │         ResNet18 model trained on patient-level aggregated embeddings.
 multimodal_vgg16_patch_level.py	       │     Patch     │       VGG16 model for multimodal feature learning at the patch level.
-multimodal_vgg16_patient_level.py	     │    Patient    │         VGG16 architecture applied at patient-level granularity.
+multimodal_vgg16_patient_level.py	   │    Patient    │         VGG16 architecture applied at patient-level granularity.
 
 
 All multimodal models include:
