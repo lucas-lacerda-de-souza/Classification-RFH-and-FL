@@ -82,32 +82,6 @@ models/
 
 data/
 
- ├── train/
- 
- │ ├── 0/ → Reactive Follicular Hyperplasia
- 
- │ └── 1/ → Follicular Lymphoma
- 
- ├── val/
- 
- │ ├── 0/
-
- │ └── 1/
- 
- ├── test/
- 
- │ ├── 0/
- 
- │ └── 1/
- 
- └── clinical_data/
- 
-  ├── clinical_data_train.xlsx
-  
-  ├── clinical_data_val.xlsx
-  
-  └── clinical_data_test.xlsx
-  
 patches/
 
  ├── gradcam/
