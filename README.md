@@ -28,37 +28,58 @@ ________________________________________
 **4. Environment Files**
 
 **Channels:**
+
   • pytorch
+  
   • nvidia
+  
   • defaults
   
 **Dependencies:**
   • python=3.12.11
+  
   • pytorch=2.8.0
+  
   • torchvision=0.19.0
+  
   • torchaudio=2.8.0
+  
   • cudatoolkit=12.8
+  
   • numpy=1.26.4
+  
   • pandas=2.2.3
+  
   • scikit-learn=1.5.2
+  
   • matplotlib=3.9.2
+  
   • seaborn=0.13.2
+  
   • pillow=10.4.0
+  
   • tqdm=4.66.5
+  
   • openpyxl=3.1.5
 ________________________________________
 **5. Model Architectures**
 
 •	XGBoost
+
 •	U-Net++
+
 •	AlexNet + Multilayer perceptron
+
 •	VGG16 + Multilayer perceptron
+
 •	ResNet18 + Multilayer perceptron
+
 •	GradCam
 ________________________________________
 **6. Features Used**
    
 •	Morphometric features (nucleus-based)
+
 •	Clinicopathologic features (age, sex, location)
 ________________________________________
 **7. Evaluation Metrics**
