@@ -1,26 +1,72 @@
-The directory should contain all input datasets used for training, validation, and testing.
-
-Organisation of the patches
-data/
-├── train/
-│   ├── 0/     # Class 0 (Reactive Follicular Hyperplasia)
-│   └── 1/     # Class 1 (Follicular Lymphoma)
-├── val/
-│   ├── 0/
-│   └── 1/
-├── test/
-│   ├── 0/
-│   └── 1/
-└── clinical_data/
-    ├── clinical_data_train.xlsx
-    ├── clinical_data_val.xlsx
-    └── clinical_data_test.xlsx
-
-
-Supplementary Table 1: Morphometric analysis table of the training dataset used in traditional statistical analysis using XGBoost model.
-
-Supplementary Table 2: Clinicopathologic and morphometric analysis table of the training dataset used in the XGBoost model.
-
-Supplementary Table 3: Multimodal data analysis table combining clinical and morphometric factors.
-
-Supplementary Table 4: Data analysis table from Grad-CAM results – external validation set.
+├── README.md
+Here is provided some of examples of synthetic patches. 
+├── patches/
+│   ├── gradcam/
+│   │   ├── heatmaps/
+│   │   │   ├── heatmap_1.png
+│   │   │   ├── heatmap_2.png
+│   │   │   ├── heatmap_3.png
+│   │   │   ├── heatmap_4.png
+│   │   │   └── heatmap_5.png
+│   │   └── patches/
+│   │       ├── patch_1.png
+│   │       ├── patch_2.png
+│   │       ├── patch_3.png
+│   │       ├── patch_4.png
+│   │       └── patch_5.png
+│   │
+│   ├── masks/
+│   │   ├── train/
+│   │   │   ├── Case_1/mask.png
+│   │   │   ├── Case_2/mask.png
+│   │   │   ├── Case_3/mask.png
+│   │   │   ├── Case_4/mask.png
+│   │   │   └── Case_5/mask.png
+│   │   ├── val/
+│   │   │   ├── Case_1/mask.png
+│   │   │   ├── Case_2/mask.png
+│   │   │   ├── Case_3/mask.png
+│   │   │   ├── Case_4/mask.png
+│   │   │   └── Case_5/mask.png
+│   │   └── test/
+│   │       ├── Case_1/mask.png
+│   │       ├── Case_2/mask.png
+│   │       ├── Case_3/mask.png
+│   │       ├── Case_4/mask.png
+│   │       └── Case_5/mask.png
+│   │
+│   └── patches/
+│       ├── train/
+│       │   ├── Case_1/patch.png
+│       │   ├── Case_2/patch.png
+│       │   ├── Case_3/patch.png
+│       │   ├── Case_4/patch.png
+│       │   └── Case_5/patch.png
+│       ├── val/
+│       │   ├── Case_1/patch.png
+│       │   ├── Case_2/patch.png
+│       │   ├── Case_3/patch.png
+│       │   ├── Case_4/patch.png
+│       │   └── Case_5/patch.png
+│       └── test/
+│           ├── Case_1/patch.png
+│           ├── Case_2/patch.png
+│           ├── Case_3/patch.png
+│           ├── Case_4/patch.png
+│           └── Case_5/patch.png
+The structure of the files to run the multimodals must follow this structure.
+├── data/
+│   ├── train/
+│   │   ├── 0/      # Reactive Follicular Hyperplasia
+│   │   └── 1/      # Follicular Lymphoma
+│   ├── val/
+│   │   ├── 0/
+│   │   └── 1/
+│   ├── test/
+│   │   ├── 0/
+│   │   └── 1/
+│   └── clinical_data/
+│       ├── clinical_data_train.xlsx
+│       ├── clinical_data_val.xlsx
+│       └── clinical_data_test.xlsx
+└── 
