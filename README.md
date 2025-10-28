@@ -119,26 +119,6 @@ README.md — Documentation and usage instructions
 REQUIREMENTS.txt — Dependencies
 
 
-models/
-
- ├── multimodal_alexnet_patch_level.py
- 
- ├── multimodal_alexnet_patient_level.py
- 
- ├── multimodal_resnet18_patch_level.py
- 
- ├── multimodal_resnet18_patient_level.py
- 
- ├── multimodal_vgg16_patch_level.py
- 
- ├── multimodal_vgg16_patient_level.py
- 
- ├── segmentation_unet++.py
- 
- ├── xgboost_classification_cpc_mpa.py
- 
- └── xgboost_classification_gradcam.py
-
 data/
 
 patches/
@@ -172,19 +152,31 @@ patches/
   └── test/
   
    └── patch.png files
+   
+ models/
 
-supplementary_data/
+ ├── multimodal_alexnet_patch_level.py
+ 
+ ├── multimodal_alexnet_patient_level.py
+ 
+ ├── multimodal_resnet18_patch_level.py
+ 
+ ├── multimodal_resnet18_patient_level.py
+ 
+ ├── multimodal_vgg16_patch_level.py
+ 
+ ├── multimodal_vgg16_patient_level.py
+ 
+ ├── segmentation_unet++.py
+ 
+ ├── xgboost_classification_cpc_mpa.py
+ 
+ └── xgboost_classification_gradcam.py
 
- ├── supplementary_table_1.xlsx → Morphometric analysis (XGBoost)
- 
- ├── supplementary_table_2.xlsx → Clinicopathologic + morphometric data
- 
- ├── supplementary_table_3.xlsx → Multimodal analysis (clinical + morphometric)
- 
- ├── supplementary_table_4.xlsx → Grad-CAM results (external validation)
- 
- └── supplementary_table_5.xlsx → Pathologists’ evaluation
- 
+results/
+
+ └── metrics
+
 ________________________________________
 
 **9. Run models and reproduce tables**
