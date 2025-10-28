@@ -1,13 +1,91 @@
-Deep Learning Architectures and Classifiers
+🧠Models
 
-Contains all scripts related to model training, evaluation, and multimodal integration.
-Each file corresponds to a specific architecture or analysis level.
+This folder contains all model implementations used in the Classification of Reactive Follicular Hyperplasia (RFH) and Follicular Lymphoma (FL) project.
+It includes deep learning, multimodal, and classical machine learning architectures for image, clinical, and morphometric data integration.
 
-File and Purpose	
-Multimodal AlexNet - Model Level.py	- Trains and evaluates the AlexNet-based multimodal model at the patch level. Integrates image and clinical features.
-Multimodal AlexNet - Patient-Level.py - Aggregates patch-level outputs from AlexNet to perform classification per patient.
-Multimodal VGG16 - Model Level.py - VGG16-based multimodal model focusing on patch-level integration with clinical data.
-Multimodal VGG16 - Patient-Level.py - Patient-level VGG16 classifier aggregating multiple patches per case.
-Multimodal ResNet18 - Model Level.py - Implements ResNet18-based multimodal fusion for feature extraction and classification.
-Multimodal ResNet18 - Patient-Level.py - Patient-level ResNet18 model that averages patch predictions for case-level inference.
-XGBoost Classification.py - Gradient-boosted model used for feature-based classification combining morphometric and clinicopathologic data.
+📘 Model Categories
+1. Multimodal Deep Learning
+
+These scripts combine histopathological image features with clinical variables to improve diagnostic performance.
+
+Script	Level	Description
+multimodal_alexnet_patch_level.py	Patch	AlexNet architecture for patch-level multimodal fusion.
+multimodal_alexnet_patient_level.py	Patient	Aggregated patient-level model using mean feature pooling.
+multimodal_resnet18_patch_level.py	Patch	ResNet18-based model integrating local image patches and tabular data.
+multimodal_resnet18_patient_level.py	Patient	ResNet18 model trained on patient-level aggregated embeddings.
+multimodal_vgg16_patch_level.py	Patch	VGG16 model for multimodal feature learning at the patch level.
+multimodal_vgg16_patient_level.py	Patient	VGG16 architecture applied at patient-level granularity.
+
+All multimodal models include:
+Late fusion between CNN features and clinical embeddings
+Weighted loss functions for class imbalance
+ROC/PR curve generation
+Support for multi-GPU training (torch.nn.DataParallel)
+
+2. Image Segmentation
+Script	Description
+segmentation_unet++.py	Implements U-Net++ with attention gates for tissue segmentation. 
+This segmentation model is used to generate tissue masks for patch extraction and preprocessing.
+
+3. Classical Machine Learning
+Script	Description
+xgboost_classification_cpc_mpa.py	XGBoost classifier trained on clinicopathologic and morphometric parameters.
+xgboost_classification_gradcam.py	XGBoost model trained on Grad-CAM-derived features for interpretability and cross-validation.
+
+Both scripts support:
+Training/validation/test split
+Feature importance plots
+Confusion matrix and ROC/PR evaluation
+CSV export of results to /results/
+
+⚙️ Usage Example
+# Train a multimodal ResNet18 model (patch-level)
+python multimodal_resnet18_patch_level.py \
+  --data_dir ./data/train \
+  --val_dir ./data/val \
+  --epochs 50 \
+  --batch_size 8 \
+  --output_dir ./results/resnet18_patch/
+
+# Run XGBoost Grad-CAM analysis
+python xgboost_classification_gradcam.py \
+  --input ./supplementary_data/supplementary_table_4.xlsx \
+  --output ./results/xgboost_gradcam/
+
+📁 Output Structure
+results/
+
+├── resnet18_patch/
+
+│   ├── model.pth
+
+│   ├── metrics.csv
+
+│   ├── confusion_matrix.png
+
+│   ├── roc_curve.png
+
+│   └── pr_curve.png
+
+├── unetpp_segmentation/
+
+│   ├── masks/
+
+│   └── training_curves.png
+
+└── xgboost_gradcam/
+
+    ├── feature_importance.png
+
+    ├── shap_summary.png
+
+    └── performance_metrics.csv
+
+🧬 Reproducibility Notes
+
+Python: 3.12.11
+PyTorch: 2.8.0 + CUDA 12.8
+GPU: 3 × NVIDIA RTX 3090 (24 GB each)
+OS: Ubuntu 20.04 LTS
+RAM: 125 GB
+Random seeds are fixed (torch, numpy, random) for deterministic behavior.
