@@ -52,32 +52,13 @@ ________________________________________
 ________________________________________
 **6. Repository Structure**
    
-├── 🧬 **data/**
-├── 🧩 **patches/**
-│   ├── gradcam/
-│   │   ├── heatmaps/
-│   │   └── patches/  
-│   │
-│   ├── masks/
-│   │   ├── train/  
-│   │   ├── val/  
-│   │   └── test/  
-│   │
-│   └── patches/
-│       ├── train/  
-│       ├── val/  
-│       └── test/  
-│             
-│   ├── README
-│   │
-│   ├── supplementary_table_1.xlsx → Morphometric analysis (XGBoost)  
-│   ├── supplementary_table_2.xlsx → Clinicopathologic + morphometric data  
-│   ├── supplementary_table_3.xlsx → Multimodal analysis (clinical + morphometric)  
-│   ├── supplementary_table_4.xlsx → Grad-CAM results (external validation)  
-│   └── supplementary_table_5.xlsx → Pathologists’ evaluation  
+## 📂 Repository Structure
+
+├── 📘 **README.md** — Documentation and usage instructions  
+├── ⚙️ **REQUIREMENTS.txt** — Dependencies  
+├── 🧾 **LICENSE** — Project license  
 │
 ├── 🧠 **models/**
-│   ├── README  
 │   ├── multimodal_alexnet_patch_level.py  
 │   ├── multimodal_alexnet_patient_level.py  
 │   ├── multimodal_resnet18_patch_level.py  
@@ -88,10 +69,48 @@ ________________________________________
 │   ├── xgboost_classification_cpc_mpa.py  
 │   └── xgboost_classification_gradcam.py  
 │
-├── 📘 **README.md** — Documentation and usage instructions  
-├── ⚙️ **REQUIREMENTS.txt** — Dependencies  
-├── 🧾 **LICENSE** — Project license  
-
+├── 🧬 **data/**
+│   ├── train/
+│   │   ├── 0/ → Reactive Follicular Hyperplasia  
+│   │   └── 1/ → Follicular Lymphoma  
+│   ├── val/
+│   │   ├── 0/
+│   │   └── 1/
+│   ├── test/
+│   │   ├── 0/
+│   │   └── 1/
+│   └── clinical_data/
+│       ├── clinical_data_train.xlsx  
+│       ├── clinical_data_val.xlsx  
+│       └── clinical_data_test.xlsx  
+│
+├── 🧩 **patches/**
+│   ├── gradcam/
+│   │   ├── heatmaps/
+│   │       └── patch.png files  
+│   │   └── patches/
+│   │       └── patch.png files  
+│   │
+│   ├── masks/
+│   │   ├── train/  
+│   │   ├── val/  
+│   │   └── test/  
+│   │       └── mask.png files  
+│   │
+│   └── patches/
+│       ├── train/  
+│       ├── val/  
+│       └── test/  
+│           └── patch.png files  
+│
+├── 📊 **supplementary_data/**
+│   ├── supplementary_table_1.xlsx → Morphometric analysis (XGBoost)  
+│   ├── supplementary_table_2.xlsx → Clinicopathologic + morphometric data  
+│   ├── supplementary_table_3.xlsx → Multimodal analysis (clinical + morphometric)  
+│   ├── supplementary_table_4.xlsx → Grad-CAM results (external validation)  
+│   └── supplementary_table_5.xlsx → Pathologists’ evaluation  
+│
+└── 
 ________________________________________
 
 **7. Run models and reproduce tables**
