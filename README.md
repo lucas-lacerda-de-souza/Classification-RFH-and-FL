@@ -191,6 +191,7 @@ cd Classification-RFH-and-FL
 ________________________________________
 
 **11. Ethics**
+
 This study was approved by the Ethics Committee of the Piracicaba Dental School, University of Campinas, Piracicaba, Brazil (protocol no. 67064422.9.1001.5418), 
 and by the West of Scotland Research Ethics Service (20/WS/0017). The study was performed according to the clinical standards of the 1975 and 1983 Declaration of Helsinki. 
 Written consent was not required as data was collected from surplus archived tissue. Data collected were fully anonymised.
@@ -198,12 +199,14 @@ Written consent was not required as data was collected from surplus archived tis
 ________________________________________
 
 **12. Data availability**
+
 All the data derived from this study are included in the manuscript. We are unable to share the whole slide images and clinical data, due to restrictions in the 
 ethics applications. However, we created synthetic slides to show the structure of the project.
 
 ________________________________________
 
 **13. Code availability**
+
 We have made the codes publicly available online, along with model weights (https://github.com/lucas-lacerda-de-souza/Classification-RFH-and-FL). All code was written 
 with Python Python 3.12.11, along with PyTorch 2.8.0. The full implementation of the model, including the code and documentation, has been deposited in the Zenodo repository 
 and is publicly available (https://doi.org/10.1234/RFH_vs_FL_AI_pipeline). 
