@@ -16,12 +16,19 @@ ________________________________________
 **3. Environment and Hardware**
 
 All experiments were performed using the following configuration:
+
 **Operating System:** Ubuntu 20.04.1 LTS
+
 **Python Version:** 3.12.11
+
 **PyTorch Version:** 2.8.0 (CUDA 12.8)
+
 **CPU:** Intel Xeon W-2295 (18 cores / 36 threads)
+
 **RAM:** 125 GB
+
 **GPUs:** 3 × NVIDIA GeForce RTX 3090 (24 GB each)
+
 ________________________________________
 **4. Environment Files**
 
