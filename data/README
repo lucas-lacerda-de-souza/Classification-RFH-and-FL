@@ -1,5 +1,7 @@
 ├── README.md
-Here is provided some of examples of synthetic patches. 
+│   Here are provided examples of synthetic patches and the directory organization required to reproduce
+│   the multimodal experiments combining morphometric, clinical, and deep learning data.
+│
 ├── patches/
 │   ├── gradcam/
 │   │   ├── heatmaps/
@@ -54,7 +56,9 @@ Here is provided some of examples of synthetic patches.
 │           ├── Case_3/patch.png
 │           ├── Case_4/patch.png
 │           └── Case_5/patch.png
-The structure of the files to run the multimodals must follow this structure.
+│
+│   The structure of the files to run the multimodal models must follow this organization:
+│
 ├── data/
 │   ├── train/
 │   │   ├── 0/      # Reactive Follicular Hyperplasia
@@ -69,4 +73,12 @@ The structure of the files to run the multimodals must follow this structure.
 │       ├── clinical_data_train.xlsx
 │       ├── clinical_data_val.xlsx
 │       └── clinical_data_test.xlsx
+│
+├── supplementary_data/
+│   ├── supplementary_table_1.xlsx   # Morphometric analysis table of the training dataset used in traditional statistical analysis (XGBoost model)
+│   ├── supplementary_table_2.xlsx   # Clinicopathologic and morphometric analysis table of the training dataset used in the XGBoost model
+│   ├── supplementary_table_3.xlsx   # Multimodal data analysis table combining clinical and morphometric factors
+│   ├── supplementary_table_4.xlsx   # Data analysis table from Grad-CAM results (external validation set)
+│   └── supplementary_table_5.xlsx   # Pathologists evaluation
 └── 
+
