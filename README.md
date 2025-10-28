@@ -52,49 +52,45 @@ ________________________________________
 ________________________________________
 **6. Repository Structure**
    
-Classification-RFH-and-FL/
-
+├── 🧬 **data/**
+├── 🧩 **patches/**
+│   ├── gradcam/
+│   │   ├── heatmaps/
+│   │   └── patches/  
+│   │
+│   ├── masks/
+│   │   ├── train/  
+│   │   ├── val/  
+│   │   └── test/  
+│   │
+│   └── patches/
+│       ├── train/  
+│       ├── val/  
+│       └── test/  
+│             
+│   ├── README
+│   │
+│   ├── supplementary_table_1.xlsx → Morphometric analysis (XGBoost)  
+│   ├── supplementary_table_2.xlsx → Clinicopathologic + morphometric data  
+│   ├── supplementary_table_3.xlsx → Multimodal analysis (clinical + morphometric)  
+│   ├── supplementary_table_4.xlsx → Grad-CAM results (external validation)  
+│   └── supplementary_table_5.xlsx → Pathologists’ evaluation  
 │
-
-├── 📄 LICENSE
-
-├── 📄 README.md
-
-├── 📄 REQUIREMENTS.txt
-
+├── 🧠 **models/**
+│   ├── README  
+│   ├── multimodal_alexnet_patch_level.py  
+│   ├── multimodal_alexnet_patient_level.py  
+│   ├── multimodal_resnet18_patch_level.py  
+│   ├── multimodal_resnet18_patient_level.py  
+│   ├── multimodal_vgg16_patch_level.py  
+│   ├── multimodal_vgg16_patient_level.py  
+│   ├── segmentation_unet++.py  
+│   ├── xgboost_classification_cpc_mpa.py  
+│   └── xgboost_classification_gradcam.py  
 │
-
-├── 📁 data/
-
-│   ├── 📄 Supplementary Table 1.xlsx   # Morphometric analysis (traditional statistics)
-
-│   ├── 📄 Supplementary Table 2.xlsx   # Clinicopathologic + morphometric analysis (XGBoost)
-
-│   ├── 📄 Supplementary Table 3.xlsx   # Multimodal (clinical + morphometric factors)
-
-│   ├── 📄 Supplementary Table 4.xlsx   # Grad-CAM data (external validation)
-
-│   └── 📄 README.md                    # Description of supplementary tables and data structure
-
-│
-
-├── 📁 models/
-
-│   ├── 📄 Multimodal AlexNet - Model Level.py
-
-│   ├── 📄 Multimodal AlexNet - Patient-Level.py
-
-│   ├── 📄 Multimodal ResNet18 - Model Level.py
-
-│   ├── 📄 Multimodal ResNet18 - Patient-Level.py
-
-│   ├── 📄 Multimodal VGG16 - Model Level.py
-
-│   ├── 📄 Multimodal VGG16 - Patient-Level.py
-
-│   ├── 📄 XGBoost Classification.py
-
-│   └── 📄 README.md                  
+├── 📘 **README.md** — Documentation and usage instructions  
+├── ⚙️ **REQUIREMENTS.txt** — Dependencies  
+├── 🧾 **LICENSE** — Project license  
 
 ________________________________________
 
