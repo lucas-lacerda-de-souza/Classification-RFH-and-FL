@@ -54,13 +54,11 @@ ________________________________________
    
 ## 📂 Repository Structure
 
-📂 Repository Structure
+README.md — Documentation and usage instructions
+REQUIREMENTS.txt — Dependencies
+LICENSE — Project license
 
-📘 README.md — Documentation and usage instructions
-⚙️ REQUIREMENTS.txt — Dependencies
-🧾 LICENSE — Project license
-
-🧠 models/
+models/
  ├── multimodal_alexnet_patch_level.py
  ├── multimodal_alexnet_patient_level.py
  ├── multimodal_resnet18_patch_level.py
@@ -71,7 +69,7 @@ ________________________________________
  ├── xgboost_classification_cpc_mpa.py
  └── xgboost_classification_gradcam.py
 
-🧬 data/
+data/
  ├── train/
  │ ├── 0/ → Reactive Follicular Hyperplasia
  │ └── 1/ → Follicular Lymphoma
@@ -86,7 +84,7 @@ ________________________________________
   ├── clinical_data_val.xlsx
   └── clinical_data_test.xlsx
 
-🧩 patches/
+patches/
  ├── gradcam/
  │ ├── heatmaps/
  │ │ └── heatmap.png files
@@ -103,7 +101,7 @@ ________________________________________
   └── test/
    └── patch.png files
 
-📊 supplementary_data/
+supplementary_data/
  ├── supplementary_table_1.xlsx → Morphometric analysis (XGBoost)
  ├── supplementary_table_2.xlsx → Clinicopathologic + morphometric data
  ├── supplementary_table_3.xlsx → Multimodal analysis (clinical + morphometric)
