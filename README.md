@@ -82,6 +82,10 @@ ________________________________________
 •	GradCam
 ________________________________________
 **6. Features Used**
+
+• Patches (H&E)
+
+• Patches (Unet++)
    
 •	Morphometric features (nucleus-based)
 
