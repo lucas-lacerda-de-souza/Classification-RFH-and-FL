@@ -200,19 +200,23 @@ This repository has been structured to meet the TRIPOD-AI (Transparent Reporting
 AI extension) and CLAIM 2024 (Checklist for Artificial Intelligence in Medical Imaging) requirements for transparent and reproducible AI in healthcare.
 
 **Data Source and Splits**
+
 Detailed in README.md → Dataset Organization and METHODS.md.
 Data divided into 80% training, 10% validation, and 10% testing.
 Two independent external validation cohorts used to assess generalizability.
 
 **Model Architecture and Training**
+
 Documented in /models and individual training scripts.
 Includes optimizer (AdamW), learning rate, batch size, epochs, and loss functions.
 
 **Performance Metrics**
+
 Internal and external validation results summarized in /results
 Cross-institutional evaluation demonstrates robustness to domain shifts.
 
 **Interpretability and Explainability**
+
 SHAP feature importance for XGBoost models and Grad-CAM heatmaps for CNNs included.
 Code and examples available in /models and /data.
 
@@ -222,10 +226,12 @@ Described in MODEL_CARD.md → Intended Use.
 Designed to assist diagnostic workflows, not to replace expert evaluation.
 
 **Limitations and Potential Biases**
+
 Outlined in MODEL_CARD.
 Includes dataset size, center-specific staining differences, and potential bias from single-institution data predominance.
 
 **Ethical Considerations**
+
 Discussed in MODEL_CARD.md → Ethical and Practical Considerations.
 Model not intended for autonomous clinical use; human oversight required at all stages.
 
