@@ -100,41 +100,35 @@ ________________________________________
 
 **7. Run models and reproduce tables**
 
-| Output (Paper files)                                                                    | Script/Notebook                                                      | Command                                                                      |
-| --------------------------------------------------------------------------------------- | -------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
-| **Figure 1** – Workflow for morphometric analysis evidenced that whole-slide            | GraphPad Prism                                                       | GraphPad Prism                                                               |
-| histological images were divided into tiles and segmented at the patch level            |                                                                      |                                                                              |
-| **Figure 2** – Traditional machine learning for clinicopathological and morphometric    | `models/XGBoost Classification to XGBoost_classification_CPC_MPA.py` | `python "models/XGBoost Classification to XGBoost_classification_CPC_MPA.py"`|                            
-| data.                                                                                   |                                                                      |                                                                              |
+Output (Paper files) 	Script/Notebook   	Command  
+**Figure 1** - Workflow for morphometric analysis evidenced that whole-slide histological images were divided into tiles and segmented at the patch level.	GraphPad Prism	GraphPad Prism
+**Figure 2** - Traditional machine learning for clinicopathological and morphometric data.	`models/XGBoost Classification to xgboost_classification_cpc_mpa.py`	`python "models/XGBoost Classification to xgboost_classification_cpc_mpa.py"`
+**Figure 3** - Overview of the explainability-guided pipeline showing Grad-CAM was applied to whole-slide images to localise high-importance regions.	`models/xgboost_classification_gradcam.py`	`python "models/xgboost_classification_gradcam.py"`
+**Figure 4** - Clinical and histopathological features of reactive follicular hyperplasia and follicular lymphoma in the oral cavity. 	Not applicable	Not applicable
+**Figure 5** - Pipeline of the study.	Not applicable	Not applicable
+**Table 1** - Metrics of the models in the multimodal in patch and patient-level analysis.	`models/multimodal_alexnet_patch_level.py`	`python "models/multimodal_alexnet_patch_level.py"`
+	`models/multimodal_alexnet_patient_level.py`	`python "models/multimodal_alexnet_patient_level.py"`
+	`models/multimodal_resnet18_patch_level.py`	`python "models/multimodal_resnet18_patch_level.py"`
+	`models/multimodal_resnet18_patient_level.py`	`python "models/multimodal_resnet18_patient_level.py"`
+	`models/multimodal_vgg16_patch_level.py`	`python "models/multimodal_vgg16_patch_level.py"`
+	`models/multimodal_vgg16_patient_level.py`	`python "models/multimodal_vgg16_patient_level.py"`
+	`models/segmentation_unet++.py`	`python "models/models/segmentation_unet++.py"`
+**Supplementary Table 1** - Morphometric analysis of cellular nuclei derived from the whole-slide images used in this study. 	`data/supplementary_table_1.xlsx`	`python "data/supplementary_table_1.xlsx"`
+**Supplementary Table 2** - Clinicopathologic and morphometric features used in the XGBoost analysis. 	`data/supplementary_table_2.xlsx`	`python "data/supplementary_table_2.xlsx"`
+**Supplementary Table 3** - Clinicopathologic and morphometric features used in the multimodal analysis.	`data/supplementary_table_3.xlsx`	`python "data/supplementary_table_3.xlsx"`
+**Supplementary Table 4** - Morphometric measures of the regions after Grad-Cam analysis for each patch. 	`data/supplementary_table_4.xlsx`	`python "data/supplementary_table_4.xlsx"`
+**Supplementary Table 5** - Pathologists’ evaluation of the WSIs. 	`data/supplementary_table_5.xlsx`	`python "data/supplementary_table_5.xlsx"`
+<img width="1332" height="741" alt="image" src="https://github.com/user-attachments/assets/f0a8059e-7d40-4750-9e89-186120ec858f" />
 
+________________________________________
 
-
-
-
-| **Supplementary Table 2** – Clinicopathologic + morphometric analysis                   | `models/XGBoost Classification.py`            | `python "models/XGBoost Classification.py" --include_clinicopathologic` |
-| **Supplementary Table 3** – Multimodal fusion (clinical + morphometric + deep features) | `models/Multimodal ResNet18 - Model Level.py` | `python "models/Multimodal ResNet18 - Model Level.py"`                  |
-| **Supplementary Table 4** – Grad-CAM validation                                         | `notebooks/gradcam_visualization.ipynb`       | Run all cells                                                           |
-| **Supplementary Table 1** – Morphometric analysis (training)                            | `models/XGBoost Classification.py`            | `python "models/XGBoost Classification.py"`                             |
-| **Supplementary Table 2** – Clinicopathologic + morphometric analysis                   | `models/XGBoost Classification.py`            | `python "models/XGBoost Classification.py" --include_clinicopathologic` |
-| **Supplementary Table 3** – Multimodal fusion (clinical + morphometric + deep features) | `models/Multimodal ResNet18 - Model Level.py` | `python "models/Multimodal ResNet18 - Model Level.py"`                  |
-| **Supplementary Table 4** – Grad-CAM validation                                         | `notebooks/gradcam_visualization.ipynb`       | Run all cells                                                           |
-| **Supplementary Table 2** – Clinicopathologic + morphometric analysis                   | `models/XGBoost Classification.py`            | `python "models/XGBoost Classification.py" --include_clinicopathologic` |
-| **Supplementary Table 3** – Multimodal fusion (clinical + morphometric + deep features) | `models/Multimodal ResNet18 - Model Level.py` | `python "models/Multimodal ResNet18 - Model Level.py"`                  |
-| **Supplementary Table 4** – Grad-CAM validation                                         | `notebooks/gradcam_visualization.ipynb`       | Run all cells                                                           |
-| **Supplementary Table 1** – Morphometric analysis (training)                            | `models/XGBoost Classification.py`            | `python "models/XGBoost Classification.py"`                             |
-| **Supplementary Table 2** – Clinicopathologic + morphometric analysis                   | `models/XGBoost Classification.py`            | `python "models/XGBoost Classification.py" --include_clinicopathologic` |
-| **Supplementary Table 3** – Multimodal fusion (clinical + morphometric + deep features) | `models/Multimodal ResNet18 - Model Level.py` | `python "models/Multimodal ResNet18 - Model Level.py"`                  |
-| **Supplementary Table 4** – Grad-CAM validation                                         | `notebooks/gradcam_visualization.ipynb`       | Run all cells                                                           |
-
-
-
-**7. Installation**
+**8. Installation**
 
 git clone https://github.com/lucas-lacerda-de-souza/Classification-RFH-and-FL.git
 cd Classification-RFH-and-FL
 
 ________________________________________
-**8. Citation**
+**9. Citation**
 
 @article{delasouza2025,
   title={Deep Learning-Based Histopathologic Classification of Head and Neck Reactive Follicular Hyperplasia and Follicular Lymphoma},
@@ -144,7 +138,7 @@ ________________________________________
   publisher={Nature Publishing Group UK London}
 }
 ________________________________________
-**9. License**
+**10. License**
 
 MIT License © 2025 Lucas Lacerda de Souza
 
