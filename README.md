@@ -106,11 +106,14 @@ ________________________________________
    
 ## 📂 Repository Structure
 
+LICENSE — Project license
+
+MODEL_CARD — Description of the essential information of the study 
+
 README.md — Documentation and usage instructions
 
 REQUIREMENTS.txt — Dependencies
 
-LICENSE — Project license
 
 models/
 
