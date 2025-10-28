@@ -130,7 +130,6 @@ Computation: Mixed precision (CUDA)
 Aggregation (patient-level): Mean of patch-level probabilities
 
 🧬 Reproducibility Notes
-
 Python: 3.12.11
 PyTorch: 2.8.0 + CUDA 12.8
 GPU: 3 × NVIDIA RTX 3090 (24 GB each)
