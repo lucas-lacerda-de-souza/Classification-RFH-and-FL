@@ -26,10 +26,12 @@ All experiments were performed using the following configuration:
 **GPUs:** 3 × NVIDIA GeForce RTX 3090 (24 GB each)
 ________________________________________
 **4. Environment Files**
+
 **Channels:**
   • pytorch
   • nvidia
   • defaults
+  
 **Dependencies:**
   • python=3.12.11
   • pytorch=2.8.0
@@ -45,7 +47,7 @@ ________________________________________
   • tqdm=4.66.5
   • openpyxl=3.1.5
 ________________________________________
-**3. Model Architectures**
+**5. Model Architectures**
 
 •	XGBoost
 •	U-Net++
@@ -54,12 +56,12 @@ ________________________________________
 •	ResNet18 + Multilayer perceptron
 •	GradCam
 ________________________________________
-**4. Features Used**
+**6. Features Used**
    
 •	Morphometric features (nucleus-based)
 •	Clinicopathologic features (age, sex, location)
 ________________________________________
-**5. Evaluation Metrics**
+**7. Evaluation Metrics**
    
 •	XGBoost + SHAP – Classification (accuracy, area under the curve (AUC), F1-score, precision, recall and SHAP).
 
@@ -74,7 +76,7 @@ ________________________________________
 •	GradCam (morphometric)
 
 ________________________________________
-**6. Repository Structure**
+**8. Repository Structure**
    
 ## 📂 Repository Structure
 
@@ -152,7 +154,7 @@ supplementary_data/
  
 ________________________________________
 
-**7. Run models and reproduce tables**
+**9. Run models and reproduce tables**
 
 
 <img width="1632" height="1041" alt="image" src="https://github.com/user-attachments/assets/c60aaf17-10f5-4f2c-b9fa-2fc5eb279eca" />
@@ -160,13 +162,33 @@ ________________________________________
 
 ________________________________________
 
-**8. Installation**
+**10. Installation**
 
 git clone https://github.com/lucas-lacerda-de-souza/Classification-RFH-and-FL.git
 cd Classification-RFH-and-FL
 
 ________________________________________
-**9. Citation**
+
+**11. Ethics**
+This study was approved by the Ethics Committee of the Piracicaba Dental School, University of Campinas, Piracicaba, Brazil (protocol no. 67064422.9.1001.5418), 
+and by the West of Scotland Research Ethics Service (20/WS/0017). The study was performed according to the clinical standards of the 1975 and 1983 Declaration of Helsinki. 
+Written consent was not required as data was collected from surplus archived tissue. Data collected were fully anonymised.
+
+________________________________________
+
+**12. Data availability**
+All the data derived from this study are included in the manuscript. We are unable to share the whole slide images and clinical data, due to restrictions in the 
+ethics applications. However, we created synthetic slides to show the structure of the project.
+
+________________________________________
+
+**13. Code availability**
+We have made the codes publicly available online, along with model weights (https://github.com/lucas-lacerda-de-souza/Classification-RFH-and-FL). All code was written 
+with Python Python 3.12.11, along with PyTorch 2.8.0. The full implementation of the model, including the code and documentation, has been deposited in the Zenodo repository 
+and is publicly available (https://doi.org/10.1234/RFH_vs_FL_AI_pipeline). 
+
+________________________________________
+**14. Citation**
 
 @article{delasouza2025,
   title={Deep Learning-Based Histopathologic Classification of Head and Neck Reactive Follicular Hyperplasia and Follicular Lymphoma},
@@ -176,7 +198,7 @@ ________________________________________
   publisher={Nature Publishing Group UK London}
 }
 ________________________________________
-**10. License**
+**15. License**
 
 MIT License © 2025 Lucas Lacerda de Souza
 
