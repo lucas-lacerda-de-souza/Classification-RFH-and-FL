@@ -58,6 +58,7 @@ ________________________________________
 ├── ⚙️ **REQUIREMENTS.txt** — Dependencies  
 ├── 🧾 **LICENSE** — Project license  
 │
+│
 ├── 🧠 **models/**
 │   ├── multimodal_alexnet_patch_level.py  
 │   ├── multimodal_alexnet_patient_level.py  
@@ -68,6 +69,7 @@ ________________________________________
 │   ├── segmentation_unet++.py  
 │   ├── xgboost_classification_cpc_mpa.py  
 │   └── xgboost_classification_gradcam.py  
+│
 │
 ├── 🧬 **data/**
 │   ├── train/
@@ -83,6 +85,7 @@ ________________________________________
 │       ├── clinical_data_train.xlsx  
 │       ├── clinical_data_val.xlsx  
 │       └── clinical_data_test.xlsx  
+│
 │
 ├── 🧩 **patches/**
 │   ├── gradcam/
@@ -102,6 +105,7 @@ ________________________________________
 │       ├── val/  
 │       └── test/  
 │           └── patch.png files  
+│
 │
 ├── 📊 **supplementary_data/**
 │   ├── supplementary_table_1.xlsx → Morphometric analysis (XGBoost)  
