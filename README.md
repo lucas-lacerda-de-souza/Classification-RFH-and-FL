@@ -15,24 +15,48 @@ ________________________________________
  <img width="1317" height="1026" alt="Captura de tela 2025-10-26 135618" src="https://github.com/user-attachments/assets/4d637290-0570-41d6-b5bb-0ec6b5c1a36f" />
 
 ________________________________________
+**3. Environment and Hardware**
+
+All experiments were performed using the following configuration:
+**Operating System:** Ubuntu 20.04.1 LTS
+**Python Version:** 3.12.11
+**PyTorch Version:** 2.8.0 (CUDA 12.8)
+**CPU:** Intel Xeon W-2295 (18 cores / 36 threads)
+**RAM:** 125 GB
+**GPUs:** 3 × NVIDIA GeForce RTX 3090 (24 GB each)
+________________________________________
+**4. Environment Files**
+**Channels:**
+  • pytorch
+  • nvidia
+  • defaults
+**Dependencies:**
+  • python=3.12.11
+  • pytorch=2.8.0
+  • torchvision=0.19.0
+  • torchaudio=2.8.0
+  • cudatoolkit=12.8
+  • numpy=1.26.4
+  • pandas=2.2.3
+  • scikit-learn=1.5.2
+  • matplotlib=3.9.2
+  • seaborn=0.13.2
+  • pillow=10.4.0
+  • tqdm=4.66.5
+  • openpyxl=3.1.5
+________________________________________
 **3. Model Architectures**
 
 •	XGBoost
-
 •	U-Net++
-
 •	AlexNet + Multilayer perceptron
-
 •	VGG16 + Multilayer perceptron
-
 •	ResNet18 + Multilayer perceptron
-
 •	GradCam
 ________________________________________
 **4. Features Used**
    
 •	Morphometric features (nucleus-based)
-
 •	Clinicopathologic features (age, sex, location)
 ________________________________________
 **5. Evaluation Metrics**
