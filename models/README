@@ -82,6 +82,53 @@ results/
 
     └── performance_metrics.csv
 
+⚙️ Model Configuration and Training Details
+1. Traditional Machine Learning (XGBoost)
+Objective: Binary logistic regression
+Boosting rounds: 100
+Learning rate: 0.1
+Maximum tree depth: 6
+Train/test split: 70% / 30%
+Evaluation metrics: Accuracy, AUC, F1-score, Precision, Recall
+Feature interpretability: SHAP (p < 0.2)
+
+2. Nuclear Segmentation (U-Net++)
+Architecture: U-Net++ with attention gates
+Framework: PyTorch
+Input size: 256 × 256 pixels
+Training: NuInsSeg (665 images, ~30,000 annotated nuclei)
+Data split: 80% training / 10% validation / 10% test
+Optimizer: Adam (learning rate = 1 × 10⁻⁴)
+Loss function: Binary Cross-Entropy with Logits
+Batch size: 4
+Epochs: 50
+Precision mode: Mixed (CUDA acceleration)
+
+3. Patch Generation and Pre-processing
+Patch size: 299 × 299 pixels
+Patch overlap: 20%
+Color normalization: Macenko method
+Data augmentation: Rotations (90°, 180°, 270°) and Gaussian blur
+Data split:
+Training: 80% (73 cases, 276,823 patches)
+Validation: 10% (9 cases, 32,043 patches)
+Test: 10% (8 cases, 31,939 patches)
+External validation: 2 cohorts (9 cases each; 22,064 and 22,168 patches)
+Final dataset size:
+1,384,115 training patches
+160,215 validation patches
+159,695 test patches
+
+4. Multimodal Deep Learning (CNN + MLP Fusion)
+Backbones: AlexNet, VGG16, and ResNet18 (ImageNet pretrained)
+Fusion strategy: Late fusion (concatenation of CNN and MLP embeddings)
+MLP branch: Fully connected layers with ReLU activation and dropout regularization
+Optimizer: AdamW (learning rate = 1 × 10⁻⁴, weight decay = 1 × 10⁻⁴)
+Loss function: Weighted Cross-Entropy
+Batch size: 64
+Computation: Mixed precision (CUDA)
+Aggregation (patient-level): Mean of patch-level probabilities
+
 🧬 Reproducibility Notes
 
 Python: 3.12.11
