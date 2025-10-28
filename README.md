@@ -3,8 +3,6 @@
 Author: Lucas Lacerda de Souza
 
 Date: 2025
-
-Language: Python 3.10+ (PyTorch 2.1)
 ________________________________________
 **1. Project Overview**
 
