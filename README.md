@@ -257,7 +257,7 @@ ________________________________________
 
 We have made the codes publicly available online, along with model weights (https://github.com/lucas-lacerda-de-souza/Classification-RFH-and-FL). All code was written 
 with Python Python 3.12.11, along with PyTorch 2.8.0. The full implementation of the model, including the code and documentation, has been deposited in the Zenodo repository 
-and is publicly available (https://doi.org/10.1234/RFH_vs_FL_AI_pipeline). 
+and is publicly available ([https://doi.org/10.1234/RFH_vs_FL_AI_pipeline](https://doi.org/10.5281/zenodo.17474399)). 
 
 ________________________________________
 **15. Citation**
