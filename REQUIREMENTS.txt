@@ -1,62 +1,48 @@
 System Requirements
-Operating System
-• Ubuntu 20.04.1 LTS (64-bit)
+• Operating System
+Ubuntu 20.04.1 LTS (64-bit)
 
-**Programming Language**
-
+• Programming Language
 Python 3.12.11
 
-Frameworks and Libraries
-
+• Frameworks and Libraries
 PyTorch 2.8.0 (CUDA 12.8)
-
 TorchVision 0.19.0
-
 TorchAudio 2.8.0
-
 NumPy 1.26.4
-
 Pandas 2.2.3
-
 Scikit-learn 1.5.2
-
 Matplotlib 3.9.2
-
 Seaborn 0.13.2
-
 Pillow 10.4.0
-
 tqdm 4.66.5
-
 openpyxl 3.1.5
 
-Channels
-
+• Channels
 pytorch
-
 nvidia
-
 defaults
 
-Hardware Requirements
-
+• Hardware Requirements
 CPU: Intel Xeon W-2295 (18 cores / 36 threads)
-
 RAM: 125 GB
-
 GPU: 3 × NVIDIA GeForce RTX 3090 (24 GB each, CUDA 12.8 compatible)
-
 Disk Space: Minimum 1 TB recommended for datasets, logs, and model weights
 
-Software Requirements
+• Software Requirements
 Core Components
-
 Deep Learning Framework: PyTorch
-
 Data Processing: NumPy, Pandas, OpenPyXL
-
 Visualization: Matplotlib, Seaborn
-
 Model Interpretation: SHAP, Grad-CAM (included in project code)
-
 Machine Learning Models: XGBoost integrated via scikit-learn API
+
+• Installation Requirements
+git clone https://github.com/lucas-lacerda-de-souza/Classification-RFH-and-FL.git
+cd Classification-RFH-and-FL
+pip install -r requirements.txt
+
+• Data and Code Availability
+Data: Synthetic examples included in the repository for demonstration.
+Code: Publicly available at GitHub
+Model Weights: Deposited in Zenodo – https://doi.org/10.1234/RFH_vs_FL_AI_pipeline
