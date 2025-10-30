@@ -112,9 +112,11 @@ ________________________________________
    
 ## 📂 Repository Structure
 
-LICENSE — Project license
+INFERENCE.py — Inference Script Example
 
-MODEL_CARD — Description of the essential information of the study 
+LICENSE.txt — Project license
+
+MODEL_CARD.txt — Description of the essential information of the study 
 
 README.md — Documentation and usage instructions
 
