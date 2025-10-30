@@ -10,7 +10,8 @@ This project implements a multimodal artificial intelligence pipeline for classi
 It integrates histopathological images, clinicopathologic data, and morphometric nuclear features using XGBoost (SHAP), convolutional neural networks (CNNs) + multilayer perceptron, and explainable AI methods (Grad-CAM).
 ________________________________________
 **2. Pipeline**
- <img width="1317" height="1026" alt="Captura de tela 2025-10-26 135618" src="https://github.com/user-attachments/assets/4d637290-0570-41d6-b5bb-0ec6b5c1a36f" />
+
+<img width="1228" height="957" alt="Captura de tela 2025-10-30 125109" src="https://github.com/user-attachments/assets/43cf2137-203f-4422-bb54-1917b7fb7962" />
 
 ________________________________________
 **3. Environment and Hardware**
