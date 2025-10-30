@@ -200,7 +200,31 @@ cd Classification-RFH-and-FL
 
 ________________________________________
 
-**11. Compliance with TRIPOD-AI and CLAIM 2024 Guidelines**
+**11. Quick Start Guide**
+
+**11.1. Clone the repository**
+
+git clone https://github.com/lucas-lacerda-de-souza/Classification-RFH-and-FL.git
+cd Classification-RFH-and-FL
+
+**11.2. Create and activate the environment**
+
+conda env create -f environment.yml
+conda activate rfh-fl-ai
+
+**11.3. Run inference**
+
+python inference.py --input_dir ./data/test/ --output_dir ./results/
+
+**11.4. Generate Grad-CAM heatmaps**
+
+python scripts/visualize_gradcam.py \
+  --model resnet18 \
+  --input_dir ./data/test/ \
+  --output_dir ./gradcam/heatmaps/
+________________________________________
+
+**12. Compliance with TRIPOD-AI and CLAIM 2024 Guidelines**
 
 This repository has been structured to meet the TRIPOD-AI (Transparent Reporting of a multivariable prediction model for Individual Prognosis Or Diagnosis – 
 AI extension) and CLAIM 2024 (Checklist for Artificial Intelligence in Medical Imaging) requirements for transparent and reproducible AI in healthcare.
@@ -243,7 +267,7 @@ Model not intended for autonomous clinical use; human oversight required at all 
 
 ________________________________________
 
-**12. Ethics**
+**13. Ethics**
 
 This study was approved by the Ethics Committee of the Piracicaba Dental School, University of Campinas, Piracicaba, Brazil (protocol no. 67064422.9.1001.5418), 
 and by the West of Scotland Research Ethics Service (20/WS/0017). The study was performed according to the clinical standards of the 1975 and 1983 Declaration of Helsinki. 
@@ -251,21 +275,21 @@ Written consent was not required as data was collected from surplus archived tis
 
 ________________________________________
 
-**13. Data availability**
+**14. Data availability**
 
 All the data derived from this study are included in the manuscript. We are unable to share the whole slide images and clinical data, due to restrictions in the 
 ethics applications. However, we created synthetic slides to show the structure of the project.
 
 ________________________________________
 
-**14. Code availability**
+**15. Code availability**
 
 We have made the codes publicly available online, along with model weights (https://github.com/lucas-lacerda-de-souza/Classification-RFH-and-FL). All code was written 
 with Python Python 3.12.11, along with PyTorch 2.8.0. The full implementation of the model, including the code and documentation, has been deposited in the Zenodo repository 
 and is publicly available ([https://doi.org/10.1234/RFH_vs_FL_AI_pipeline](https://doi.org/10.5281/zenodo.17474399)). 
 
 ________________________________________
-**15. Citation**
+**16. Citation**
 
 @article{delasouza2025,
   title={Deep Learning-Based Histopathologic Classification of Head and Neck Reactive Follicular Hyperplasia and Follicular Lymphoma},
@@ -275,7 +299,7 @@ ________________________________________
   publisher={Nature Publishing Group UK London}
 }
 ________________________________________
-**16. License**
+**17. License**
 
 MIT License © 2025 Lucas Lacerda de Souza
 
