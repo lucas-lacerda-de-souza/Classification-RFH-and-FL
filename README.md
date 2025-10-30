@@ -134,6 +134,10 @@ patches/
  │ └── patches/
  
  │  └── patch.png files
+
+ │ └── wsi_heatmaps/
+ 
+ │  └── wsi.png files
  
  ├── masks/
  
