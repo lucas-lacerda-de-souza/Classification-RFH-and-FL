@@ -11,11 +11,16 @@ the multimodal experiments combining morphometric, clinical, and deep learning d
 │   │   │   ├── heatmap_4.png
 │   │   │   └── heatmap_5.png
 │   │   └── patches/
-│   │       ├── patch_1.png
-│   │       ├── patch_2.png
-│   │       ├── patch_3.png
-│   │       ├── patch_4.png
-│   │       └── patch_5.png
+│   │   ├── patch_1.png
+│   │   ├── patch_2.png
+│   │   ├── patch_3.png
+│   │   ├── patch_4.png
+│   │   └── patch_5.png
+│   └── wsi_heatmaps/
+│   ├── wsi_fl_1.png
+│   ├── wsi_fl_2.png
+│   ├── wsi_rfh_1.png
+│   └── wsi_rfh_2.png
 │   │
 │   ├── masks/
 │   │   ├── train/
