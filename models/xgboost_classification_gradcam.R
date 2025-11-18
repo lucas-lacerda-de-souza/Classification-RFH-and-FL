@@ -21,8 +21,8 @@ for (pkg in packages) {
 # =========================================================
 #  Load Datasets
 # =========================================================
-train_data <- read_excel("F:/DLBCL-NKTCL-NT/XBoost_Train.xlsx")
-test_data  <- read_excel("F:/DLBCL-NKTCL-NT/XBoost_Test.xlsx")
+train_data <- read_excel("file.xlsx")
+test_data  <- read_excel("file.xlsx")
 
 features <- c(
   "Nucleus: Area",
