@@ -190,7 +190,9 @@ ________________________________________
 **9. Run models and reproduce tables**
 
 
-<img width="1632" height="1041" alt="image" src="https://github.com/user-attachments/assets/c60aaf17-10f5-4f2c-b9fa-2fc5eb279eca" />
+
+<img width="1460" height="461" alt="image" src="https://github.com/user-attachments/assets/12d4a0a9-1d72-4108-9b5c-78f71f31c730" />
+
 
 
 ________________________________________
