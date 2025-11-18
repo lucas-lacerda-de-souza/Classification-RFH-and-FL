@@ -71,7 +71,7 @@ ________________________________________
 ________________________________________
 **5. Model Architectures**
 
-•	XGBoost
+•	XGBoost +SHAP
 
 •	U-Net++
 
@@ -105,7 +105,7 @@ ________________________________________
 
 •	ResNet18 (Loss, Accuracy, Precision, Recall, Confusion matrix (TP, FN, FP, TN), F1-score, Specificity, Receiver operating characteristic – area under the curve (ROC AUC) and Cohen's Kappa).
 
-•	GradCam (morphometric)
+•	GradCam - XGBoost - Classification (accuracy, area under the curve (AUC), F1-score, precision, recall). 
 
 ________________________________________
 **8. Repository Structure**
