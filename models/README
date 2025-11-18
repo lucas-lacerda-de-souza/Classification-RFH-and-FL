@@ -30,8 +30,8 @@ This segmentation model is used to generate tissue masks for patch extraction an
 
 3. Classical Machine Learning
 Script	Description
-xgboost_classification_cpc_mpa.py	XGBoost classifier trained on clinicopathologic and morphometric parameters.
-xgboost_classification_gradcam.py	XGBoost model trained on Grad-CAM-derived features for interpretability and cross-validation.
+xgboost_classification_cpc_mpa.R	XGBoost classifier trained on clinicopathologic and morphometric parameters.
+xgboost_classification_gradcam.R	XGBoost model trained on Grad-CAM-derived features for interpretability and cross-validation.
 
 Both scripts support:
 Training/validation/test split
