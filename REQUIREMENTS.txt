@@ -45,4 +45,4 @@ pip install -r requirements.txt
 • Data and Code Availability
 Data: Synthetic examples included in the repository for demonstration.
 Code: Publicly available at GitHub
-Model Weights: Deposited in Zenodo – https://zenodo.org/records/17474399
+Model Weights: Deposited in Zenodo – https://doi.org/10.5281/zenodo.17474399
