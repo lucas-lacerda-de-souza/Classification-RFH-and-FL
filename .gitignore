@@ -1,0 +1,117 @@
+# Virtual Environments
+.venv/
+venv/
+env/
+ENV/
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+*.sublime-project
+*.sublime-workspace
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Testing
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# Build
+*.o
+*.a
+*.so
+
+# Documentation
+docs/_build/
+site/
+
+# PyTorch Models and Checkpoints
+*.pth
+*.pt
+*.pkl
+*.pickle
+checkpoints/
+model_weights/
+
+# Data (optional - uncomment if large datasets shouldn't be tracked)
+# data/patches/
+# data/masks/
+
+# Results and Outputs
+results/
+outputs/
+logs/
+*.log
+runs/
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Windows
+Desktop.ini
+
+# macOS
+.AppleDouble
+.LSOverride
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# Local configuration
+.env.local
+.env.*.local
+
+# IDE settings
+.vscode/settings.json
+.vscode/launch.json
+
+# Temporary files
+*.tmp
+*.temp
+*.bak

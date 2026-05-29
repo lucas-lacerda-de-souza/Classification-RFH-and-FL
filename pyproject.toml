@@ -1,0 +1,121 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rfh-fl-classification"
+version = "1.0.0"
+description = "A multimodal explainable AI framework for differential diagnosis of reactive follicular hyperplasia and follicular lymphoma"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [
+    {name = "Lucas Lacerda de Souza", email = "lucas.lacerda@example.com"}
+]
+keywords = ["deep-learning", "medical-imaging", "explainable-ai", "pathology", "classification"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: Healthcare Industry",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Scientific/Engineering :: Medical Science Apps",
+]
+requires-python = ">=3.12,<3.13"
+
+dependencies = [
+    "numpy==2.2.6",
+    "pandas==3.0.3",
+    "scikit-learn==1.8.0",
+    "matplotlib==3.10.9",
+    "seaborn==0.13.2",
+    "pillow==12.2.0",
+    "tqdm==4.67.3",
+    "openpyxl==3.1.5",
+    "xgboost>=3.0.0",
+    "shap>=0.45.0",
+]
+
+[project.optional-dependencies]
+torch-cpu = [
+    "torch==2.8.0",
+    "torchvision==0.23.0",
+    "torchaudio==2.8.0",
+]
+torch-cuda = [
+    "torch==2.8.0",
+    "torchvision==0.23.0",
+    "torchaudio==2.8.0",
+]
+dev = [
+    "pytest>=7.0",
+    "pytest-cov>=4.0",
+    "black>=23.0",
+    "flake8>=6.0",
+    "mypy>=1.0",
+    "jupyter>=1.0",
+    "ipython>=8.0",
+]
+docs = [
+    "sphinx>=5.0",
+    "sphinx-rtd-theme>=1.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/lucas-lacerda-de-souza/Classification-RFH-and-FL"
+Repository = "https://github.com/lucas-lacerda-de-souza/Classification-RFH-and-FL"
+Documentation = "https://github.com/lucas-lacerda-de-souza/Classification-RFH-and-FL/blob/main/README.md"
+"Bug Tracker" = "https://github.com/lucas-lacerda-de-souza/Classification-RFH-and-FL/issues"
+"Zenodo Dataset" = "https://doi.org/10.5281/zenodo.18190502"
+
+[tool.setuptools]
+packages = ["models"]
+
+[tool.black]
+line-length = 100
+target-version = ["py312"]
+exclude = '''
+/(
+    \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+)/
+'''
+
+[tool.isort]
+profile = "black"
+line_length = 100
+skip_gitignore = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+addopts = "-v --strict-markers"
+
+[tool.mypy]
+python_version = "3.12"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = false
+ignore_missing_imports = true
+
+[tool.coverage.run]
+source = ["models"]
+omit = ["*/tests/*"]
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "def __repr__",
+    "raise AssertionError",
+    "raise NotImplementedError",
+    "if __name__ == .__main__.:",
+]

@@ -145,7 +145,7 @@ MODELS - Models used in the study
 
 RESULTS - Results of the study
 
-INFERENCE.py — Inference Script Example
+inferance.py — Inference Script Example
 
 LICENSE.txt — Project license
 
@@ -178,7 +178,7 @@ conda activate rfh-fl-ai
 
 **10.3. Run inference**
 
-python inference.py --input_dir ./data/test/ --output_dir ./results/
+python inferance.py --input_dir ./data/test/ --output_dir ./results/
 
 **10.4. Generate Grad-CAM heatmaps**
 
